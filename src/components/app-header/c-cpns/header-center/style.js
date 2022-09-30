@@ -1,4 +1,5 @@
-import styled from "styled-components"
+import styled from "styled-components";
+
 
 export const CenterWrapper = styled.div`
   .search-bar {
@@ -12,7 +13,7 @@ export const CenterWrapper = styled.div`
     border: 1px solid #ddd;
     border-radius: 24px;
     cursor: pointer;
-    ${(props) => props.theme.mixin.boxShadow};
+    ${props => props.theme.mixin.boxShadow};
 
     .text {
       padding: 0 16px;
@@ -28,7 +29,7 @@ export const CenterWrapper = styled.div`
       height: 32px;
       border-radius: 50%;
       color: #fff;
-      background-color: ${(props) => props.theme.color.primaryColor};
+      background-color: ${props => props.theme.color.primaryColor};
     }
   }
 `

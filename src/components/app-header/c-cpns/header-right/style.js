@@ -1,4 +1,5 @@
-import styled from "styled-components"
+import styled from "styled-components";
+
 
 export const RightWrapper = styled.div`
   flex: 1;
@@ -6,7 +7,7 @@ export const RightWrapper = styled.div`
   justify-content: flex-end;
   align-items: center;
 
-  color: ${(props) => props.theme.text.primaryColor};
+  color: ${props => props.theme.text.primaryColor};
   font-weight: 600;
 
   .btns {
@@ -39,10 +40,10 @@ export const RightWrapper = styled.div`
     border: 1px solid #ccc;
     border-radius: 25px;
     background-color: #fff;
-    color: ${(props) => props.theme.text.primaryColor};
+    color: ${props => props.theme.text.primaryColor};
     cursor: pointer;
 
-    ${(props) => props.theme.mixin.boxShadow};
+    ${props => props.theme.mixin.boxShadow};
 
     .panel {
       position: absolute;
@@ -51,11 +52,10 @@ export const RightWrapper = styled.div`
       width: 240px;
       background-color: #fff;
       border-radius: 10px;
-      box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 6px rgba(0,0,0,.2);
       color: #666;
 
-      .top,
-      .bottom {
+      .top, .bottom {
         padding: 10px 0;
 
         .item {
