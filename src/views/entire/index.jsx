@@ -1,12 +1,15 @@
 import React, { memo } from "react"
+import EntireFilter from "./c-cpns/entire-filter"
+import EntirePagination from "./c-cpns/entire-pagination"
+import EntireRooms from "./c-cpns/entire-rooms"
 import { EntireWrapper } from "./style"
 
 const Entire = memo(() => {
   return (
     <EntireWrapper>
-      <div className='filter'>filter-section</div>
-      <div className='rooms'>room-section</div>
-      <div className='pagination'>pagination-section</div>
+      <EntireFilter />
+      <EntirePagination />
+      <EntireRooms />
     </EntireWrapper>
   )
 })
