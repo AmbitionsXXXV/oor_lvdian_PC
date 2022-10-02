@@ -1,4 +1,4 @@
-import EtcRequest from "./request"
+import etcRequest from "./request"
 
-export default EtcRequest
+export default etcRequest
 export * from "./modules/home"

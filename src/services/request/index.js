@@ -1,7 +1,7 @@
 import axios from "axios"
 import { BASE_URL, TIMEOUT } from "./config"
 
-class EtcRequest {
+class etcRequest {
   constructor(baseURL, timeout) {
     this.instance = axios.create({
       baseURL,
@@ -31,4 +31,4 @@ class EtcRequest {
   }
 }
 
-export default new EtcRequest(BASE_URL, TIMEOUT)
+export default new etcRequest(BASE_URL, TIMEOUT)
