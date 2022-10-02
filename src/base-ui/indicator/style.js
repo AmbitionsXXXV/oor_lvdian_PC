@@ -1,8 +1,7 @@
-import styled from "styled-components";
-
+import styled from "styled-components"
 
 export const IndicatorWrapper = styled.div`
-  overflow: hidden;  
+  overflow: hidden;
 
   .i-content {
     display: flex;

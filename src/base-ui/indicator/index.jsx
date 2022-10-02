@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types'
-import React, { memo, useEffect, useRef } from 'react'
-import { IndicatorWrapper } from './style'
+import PropTypes from "prop-types"
+import React, { memo, useEffect, useRef } from "react"
+import { IndicatorWrapper } from "./style"
 
 const Indicator = memo((props) => {
   const { selectIndex = 0 } = props
@@ -27,17 +27,18 @@ const Indicator = memo((props) => {
 
   return (
     <IndicatorWrapper>
-      <div className='i-content' ref={contentRef}>
-        {
-          props.children
-        }
+      <div
+        className='i-content'
+        ref={contentRef}
+      >
+        {props.children}
       </div>
     </IndicatorWrapper>
   )
 })
 
 Indicator.propTypes = {
-  selectIndex: PropTypes.number
+  selectIndex: PropTypes.number,
 }
 
 export default Indicator
