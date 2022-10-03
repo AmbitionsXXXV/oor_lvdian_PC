@@ -6,9 +6,10 @@ import HomeBanner from "./c-cpns/home-banner"
 import { HomeWrapper } from "./style"
 import HomeSectionV1 from "./c-cpns/home-section-v1"
 import HomeSectionV2 from "./c-cpns/home-section-v2"
+import { isEmptyO } from "@/utils"
 import HomeLongfor from "./c-cpns/home-longfor"
 import HomeSectionV3 from "./c-cpns/home-section-v3"
-import { isEmptyO } from "@/utils"
+import { changeHeaderConfigAction } from "@/store/modules/main"
 
 const Home = memo(() => {
   /** 从redux中获取数据 */
@@ -35,6 +36,7 @@ const Home = memo(() => {
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(fetchHomeDataAction("xxxx"))
+    dispatch(changeHeaderConfigAction({ isFixed: true, topAlpha: true }))
   }, [dispatch])
 
   return (
